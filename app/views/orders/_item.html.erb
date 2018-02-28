@@ -1,0 +1,15 @@
+ <% @order.line_items.each do |t| %>
+    <h2><%= t.product.name %></h2>
+ <tr>
+    <td>
+      <%= image_tag t.product.image.tiny %>
+    </td>
+    <td>
+      <h4><%= t.product.name %> </h4>
+      price: <%= t.product.price %>
+      quantity: <%= t.quantity %>
+      <br>
+      <p><%= t.product.description %></p>
+    </td>
+  </tr>
+<% end %>
