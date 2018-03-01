@@ -1,8 +1,11 @@
-<section class="cart-show">
-
-  <header class="page-header">
+<header class="page-header">
     <h1>My Cart</h1>
-  </header>
+</header>
+<% if cart.count == 0 %>
+<h2> Your cart is empty! </h2>
+<%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
+<% else %>
+<section class="cart-show">
 
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -51,3 +54,5 @@
   </div>
 
 </section>
+
+<% end %>
