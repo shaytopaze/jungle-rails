@@ -140,12 +140,27 @@ User.create({
   })
 
 prod1 = Product.find_by name: 'Red Bookshelf'
+prod2 = Product.find_by name: 'Electric Chair'
 
 prod1.reviews.create({
   product_id:  12,
   description: 'pretty shitty',
   user_id: 1,
   rating: 1,
+})
+
+prod1.reviews.create({
+  product_id:  12,
+  description: 'super lame',
+  user_id: 1,
+  rating: 2,
+})
+
+prod2.reviews.create({
+  product_id:  11,
+  description: 'SUPER GREAT',
+  user_id: 1,
+  rating: 10,
 })
 
 puts "DONE!"
