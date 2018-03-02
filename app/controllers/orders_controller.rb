@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
 
   def show
-    @current_user = User.find(session[:user_id])
+    # @current_user = User.find(session[:user_id])
     @order = Order.find(params[:id])
   end
 

@@ -10,6 +10,7 @@ class UsersController < ApplicationController
       redirect_to '/'
     else
       redirect_to '/signup'
+      flash[:alert] = "The email you entered has already been registered, please use a different email!"
     end
   end
 

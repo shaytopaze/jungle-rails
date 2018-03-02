@@ -17,8 +17,8 @@ def new
         flash[:notice] = "Your review has been submitted successfully"
         redirect_to @product
       else
-        flash[:error] = "There was an error deleteing the purchase."
-        render @product
+        flash[:alert] = "You must enter some details!"
+        redirect_to :back
       end
     end
   end
