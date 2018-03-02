@@ -3,7 +3,6 @@ class OrdersController < ApplicationController
   def show
     @current_user = User.find(session[:user_id])
     @order = Order.find(params[:id])
-    # UserMailer.welcome_email(@current_user, @order).deliver_now
   end
 
   def create

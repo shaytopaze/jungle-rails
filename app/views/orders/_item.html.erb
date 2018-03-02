@@ -1,15 +1,21 @@
- <% @order.line_items.each do |t| %>
-    <h2><%= t.product.name %></h2>
- <tr>
-    <td>
-      <%= image_tag t.product.image.tiny %>
-    </td>
-    <td>
-      <h4><%= t.product.name %> </h4>
-      price: <%= t.product.price %>
-      quantity: <%= t.quantity %>
-      <br>
-      <p><%= t.product.description %></p>
-    </td>
-  </tr>
-<% end %>
+<%item_total = product.price * quantity%>
+<%@order_total += item_total%>
+<tr>
+  <td>
+    <%=image_tag product.image.tiny%>
+  </td>
+  <td>
+    <h4><%=product.name%></h4>
+    <br>
+    <p style='font-size:100%'><%=product.description%></p>
+  </td>
+  <td style='font-size:125%'>
+    <%=product.price%>
+  </td>
+  <td style='font-size:125%'>
+    <%=quantity%>
+  </td>
+  <td style='font-size:125%'>
+    <%=item_total%>
+  </td>
+</tr>
