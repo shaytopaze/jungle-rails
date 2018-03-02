@@ -26,6 +26,11 @@
     <br />
     <hr />
     <h2>Reviews</h2>
+    <h4 style="color:#000000">
+      Average rating: <%= @average_rating %><% if @average_rating == nil %> No reviews yet!<% else %>
+      <% end %>
+    </h4>
+    <br />
     <% if current_user %>
     <div class="container">
       <div class="row">
