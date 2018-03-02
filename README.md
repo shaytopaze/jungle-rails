@@ -21,8 +21,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-!["Screenshot of Babble]()
-!["Second Screenshot of Babble"]()
+!["Screenshot of Catalogue](https://github.com/shaytopaze/jungle-rails/blob/master/docs/catalogue.png?raw=true)
+!["Screenshot of Product Details"](https://github.com/shaytopaze/jungle-rails/blob/master/docs/details.png?raw=true)
+!["Screenshot of Create Review"](https://github.com/shaytopaze/jungle-rails/blob/master/docs/createReview.png?raw=true)
+!["Screenshot of List of Reviews"](https://github.com/shaytopaze/jungle-rails/blob/master/docs/reviewList.png?raw=true)
+!["Screenshot of My Cart"](https://github.com/shaytopaze/jungle-rails/blob/master/docs/myCart.png?raw=true)
 
 ## Dependencies
 
