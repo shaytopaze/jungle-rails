@@ -4,7 +4,7 @@ RSpec.describe Product, type: :model do
   describe 'Validations' do
     before :example do
       @category = Category.create(name:'test')
-      @product = @category.products.create(name: 'product', price_cents: 10, quantity: 1)
+      @product = @category.products.create(name: 'name', price_cents: 10, quantity: 1)
     end
     it "creates a product with a name, price, quantity and category" do
       expect(@product.valid?).to eq true
@@ -27,4 +27,6 @@ RSpec.describe Product, type: :model do
     end
   end
 end
+
+
 
