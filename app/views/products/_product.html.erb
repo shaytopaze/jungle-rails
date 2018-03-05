@@ -9,9 +9,9 @@
     <%= product.description %>
   </p>
    <% if product.reviews.count > 0 %>
-  <p class="rating">
+  <h5 class="rating">
     Average Rating: <%= product.reviews.sum(:rating) / product.reviews.count %>
-    </p>
+    </h5>
   <% end %>
   <footer class="actions">
     <% if product.quantity > 0 %>
